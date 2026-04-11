@@ -1,4 +1,4 @@
-package com.n4d3sh1k4.user_service;
+package com.n4d3sh1k4.user_service.filter;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

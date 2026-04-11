@@ -17,9 +17,21 @@ public class UserProfile {
     @Column(name = "id")
     private UUID id;
 
-    @Column(name = "username")
-    private String username;
+    @Column(name = "first_name")
+    private String firstName;
+
+    @Column(name = "last_name")
+    private String lastName;
 
     @Column(name = "email")
     private String email;
+
+    @Column(name = "phone")
+    private String phone;
+
+    @Column(name = "position")
+    private String position;
+
+    @Column(name = "avatar_url")
+    private String avatarUrl;
 }

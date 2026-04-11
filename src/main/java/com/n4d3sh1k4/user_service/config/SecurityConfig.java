@@ -1,5 +1,6 @@
-package com.n4d3sh1k4.user_service;
+package com.n4d3sh1k4.user_service.config;
 
+import com.n4d3sh1k4.user_service.filter.InternalUserFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
