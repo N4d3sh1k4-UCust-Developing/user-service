@@ -12,7 +12,6 @@ import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-
 @RestController
 @RequestMapping("/user")
 @RequiredArgsConstructor
@@ -25,7 +24,7 @@ public class ProfileController {
         return profileService.getProfile(principal.id());
     }
 
-    @PatchMapping("/me") // Используем PATCH для частичного обновления
+    @PatchMapping("/me")
     public ProfileResponse updateProfile(
             @AuthenticationPrincipal UserPrincipal principal,
             @Valid @RequestBody UpdateProfileRequest request) {
