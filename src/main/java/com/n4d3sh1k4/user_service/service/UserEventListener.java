@@ -30,6 +30,7 @@ public class UserEventListener {
         profile.setFirstName(event.firstName());
         profile.setLastName(event.lastName());
         profile.setEmail(event.email());
+        profile.setPhone(event.phone());
         // profile.setAvatarUrl("default_avatar.png"); // Можно задать дефолты
 
         profileRepository.save(profile);
